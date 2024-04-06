@@ -1,0 +1,8 @@
+Cách để bắt Extension ID
+Post 1: Vấn đề => [https://www.facebook.com/groups/autocsharp/posts/6859996890689158/]
+Post 2: Cách mình giải quyết
+driver.get('chrome://extensions/')
+js_code = "return document.querySelector('extensions-manager').extensions_.map(({id, name}) => ({id, name}))"
+extension_id = driver.execute_script(js_code)[0]['id']
+Các bác nào chỉ quan tâm về code thì đoạn trên là quá đủ. Còn video bên dưới thì ngồi mò cách cùng em thôi nha. Cảm ơn các bác đã xem video
+https://github.com/HungHT1890/get_browser_extension_id/blob/main/README.md
