@@ -1,0 +1,8 @@
+CALLBACK SUBMIT FUNCAPTCHA REG H.O.T.MAIL
+Sau khi swith iframe
+chỉ cần vào 1 cái thôi nha mọi người (cái mình mua là do mình switch vào 2 cái thế là bay tong 500k buổi sáng ):
+tên: enforcementFrame
+xpath:'//*[@id="enforcementFrame"]'
+callback: '{parent.postMessage(JSON.stringify({eventId:"challenge-complete",payload:{sessionToken:"'+token+'"}}),"*")}'
+Captcha mình đang xài bên này ae chưa dùng tạo acc qua link ủng hộ mình tí rau tí bún
+https://rockcaptcha.com?affref=37542
